@@ -1,5 +1,6 @@
 package mine.block.beyond;
 
+import mine.block.beyond.data.BeyondAdvancements;
 import net.fabricmc.api.ModInitializer;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
@@ -15,5 +16,11 @@ public class Beyond implements ModInitializer {
                 .tintColor(5, 98, 93)
                 .forcedSize(20, 6)
                 .registerPortal();
+
+        BeyondAdvancements.init();
+    }
+
+    public static Identifier id(String id) {
+        return new Identifier("beyond", id);
     }
 }

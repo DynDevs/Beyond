@@ -4,6 +4,7 @@
   "package": "mine.block.beyond.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PortalPlacerMixin"
   ],
   "client": [
   ],
