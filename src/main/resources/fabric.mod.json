@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "beyond",
+  "version": "${version}",
+  "name": "Beyond",
+  "description": "What lies beyond this world, and why did the ancient cities fall into ruin and skulk?",
+  "authors": [
+    "mineblock11"
+  ],
+  "contact": {},
+  "license": "MPL-2.0",
+  "icon": "assets/beyond/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "mine.block.beyond.client.BeyondClient"
+    ],
+    "main": [
+      "mine.block.beyond.Beyond"
+    ]
+  },
+  "mixins": [
+    "beyond.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "fabric": "*",
+    "minecraft": "1.19"
+  }
+}
